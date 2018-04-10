@@ -1,0 +1,19 @@
+API End points can be accessed via:
+GET http://zappos-raunak.herokuapp.com/raunakRestaurant/restaurant/{restaurant-Name}/menu/{menu-type}/menuitem/{item}
+{restaurant-Name}   {menu-type}   {item}
+All Day Eats		    Lunch		      Steak
+				                      Salmon
+All Day Eats		    Dinner		    Corned Beef
+				                    Omelet
+All Day Eats		    Bar		        Roast Beef
+	
+Make out meals		  Lunch		      Turkey Sausage
+				                      Salmon
+                                  
+Night Hungers		    Dinner		    Tuna Salad
+				                          Crispy Jumbo Fish
+	
+Happy Mornings      Breakfast	    rotisserie chicken breast
+				                          bbq-chicken
+	
+Happy Mornings      Lunch		      Turkey Sausage
