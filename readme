@@ -31,3 +31,10 @@ Happy Mornings      Breakfast	    rotisserie chicken breast
 				                          bbq-chicken
 	
 Happy Mornings      Lunch		      Turkey Sausage
+# Caution
+You would want to add in your personal database configurations and API key from spoonacular, flikcr in following places:
+zappos/src/java/zappos/raunak/data/scientist/serverservlet.java
+uri = new MongoClientURI("<<mlab credentials>>");
+randomFoodJoke() & getWineRecommendation()
+con.setRequestProperty("X-Mashape-Key", "<<X-Mashape-Key>>");
+flickrURL = new URL(<<flickr_key>>);
