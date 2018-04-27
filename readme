@@ -17,20 +17,17 @@ GET http://zappos-raunak.herokuapp.com/raunakRestaurant/restaurant/{restaurant-N
 {restaurant-Name}   {menu-type}   {item}
 All Day Eats		    Lunch		      Steak
 				                      Salmon
-All Day Eats		    Dinner		    Corned Beef
-				                    Omelet
-All Day Eats		    Bar		        Roast Beef
-	
-Make out meals		  Lunch		      Turkey Sausage
+All Day Eats		    Dinner		      Corned Beef
+				                      Omelet
+All Day Eats		    Bar		              Roast Beef
+Make out meals		    Lunch		      Turkey Sausage
 				                      Salmon
-                                  
-Night Hungers		    Dinner		    Tuna Salad
-				                          Crispy Jumbo Fish
-	
-Happy Mornings      Breakfast	    rotisserie chicken breast
-				                          bbq-chicken
-	
-Happy Mornings      Lunch		      Turkey Sausage
+Night Hungers		    Dinner		      Tuna Salad
+				                      Crispy Jumbo Fish	
+Happy Mornings              Breakfast	    	      rotisserie chicken breast
+				                      bbq-chicken
+Happy Mornings      	    Lunch		      Turkey Sausage
+
 # Caution
 You would want to add in your personal database configurations and API key from spoonacular, flikcr in following places:
 zappos/src/java/zappos/raunak/data/scientist/serverservlet.java
