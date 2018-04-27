@@ -49,7 +49,7 @@ public class serverservlet extends HttpServlet {
 
     //Inititialize DB connection
     public void init() {
-        uri = new MongoClientURI("mongodb://raunak:raunak@ds233769.mlab.com:33769/db-zappos-restaurant");
+        uri = new MongoClientURI("<<mlab credentials>>");
         client = new MongoClient(uri);
         db = client.getDatabase(uri.getDatabase());
     }
@@ -227,7 +227,7 @@ public class serverservlet extends HttpServlet {
             wineURL = new URL("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/jokes/random");
             HttpURLConnection con = (HttpURLConnection) wineURL.openConnection();
             // Set headers
-            con.setRequestProperty("X-Mashape-Key", "4yVNWoVNnImsh5JuVWiiLrmauDbFp11isL5jsnJ8qPxl2i0Eue");
+            con.setRequestProperty("X-Mashape-Key", "<<X-Mashape-Key>>");
             con.setRequestProperty("X-Mashape-Host", "spoonacular-recipe-food-nutrition-v1.p.mashape.com");
             con.setRequestMethod("GET");
             // Connect
@@ -256,7 +256,7 @@ public class serverservlet extends HttpServlet {
             wineURL = new URL("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/wine/pairing?maxPrice=50&food=" + menuitem);
             HttpURLConnection con = (HttpURLConnection) wineURL.openConnection();
             // Header
-            con.setRequestProperty("X-Mashape-Key", "4yVNWoVNnImsh5JuVWiiLrmauDbFp11isL5jsnJ8qPxl2i0Eue");
+            con.setRequestProperty("X-Mashape-Key", "<<X-Mashape-Key>>");
             con.setRequestProperty("X-Mashape-Host", "spoonacular-recipe-food-nutrition-v1.p.mashape.com");
             con.setRequestMethod("GET");
             // Connect
@@ -281,7 +281,7 @@ public class serverservlet extends HttpServlet {
         try {
             String pictureURL = null;
             //URL
-            URL flickrURL = new URL("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=174c1bc38c75923b5bdb5b20179e8b29&is_getty=true&tags=" + menuitem);
+            URL flickrURL = new URL("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=<<flickr_key>>&is_getty=true&tags=" + menuitem);
             HttpURLConnection conn = (HttpURLConnection) flickrURL.openConnection();
             // Connect
             conn.connect();
